@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "bf9c27c7-7bb0-4a2e-aba2-b3ec34f47cf0",
+		"name": "2-22Class Work",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35331308"
+	},
+	"item": [
+		{
+			"name": "Authorization",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"   let XYZ= pm.response.json();\r",
+							"pm.collectionVariables.set(\"token\", XYZ.access_token);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer ZjMyYWQyZDdkMjBlYTQwOWY4NTY1MWU4MGMyMjQ4NGY5OGNlNDI3N2QwMGUxZTBmMjAyZGU1MjcyYjIyZmJiZQ"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "Exploratory1@1.1",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Exploratory1@1.1",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://radio-shop.megaplan.by/api/v3/auth/access_token",
+					"protocol": "https",
+					"host": [
+						"radio-shop",
+						"megaplan",
+						"by"
+					],
+					"path": [
+						"api",
+						"v3",
+						"auth",
+						"access_token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Пример",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "Exploratory1@1.1",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Exploratory1@1.1",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://radio-shop.megaplan.by/api/v3/auth/access_token",
+							"protocol": "https",
+							"host": [
+								"radio-shop",
+								"megaplan",
+								"by"
+							],
+							"path": [
+								"api",
+								"v3",
+								"auth",
+								"access_token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 06 Jun 2024 09:52:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "x-info",
+							"value": "c2f1b27"
+						},
+						{
+							"key": "x-request-id",
+							"value": "1717667552_3663_277590"
+						},
+						{
+							"key": "x-version",
+							"value": "r2419.26637.13"
+						},
+						{
+							"key": "set-cookie",
+							"value": "COOKIEID2=1717667552_ishl63voeasx2zfz5kgzs; expires=Thu, 13-Jun-2024 09:52:32 GMT; Max-Age=604800; path=/; httponly"
+						},
+						{
+							"key": "set-cookie",
+							"value": "SID2=1717667552_s80ufkxl16pr9y5g4t0ai; path=/; httponly"
+						},
+						{
+							"key": "expires",
+							"value": "Thu, 06 Jun 2024 09:52:31 GMT"
+						},
+						{
+							"key": "x-cached",
+							"value": "MISS"
+						},
+						{
+							"key": "strict-transport-security",
+							"value": "max-age=31536000; includeSubdomains; preload"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v4?s=CGRmyFdpfmXdatezpDZi9QLPOfCxA6hdo7KFJNURjkdK7awnE5zTUylOSdOow9Af6asC%2BNOkS7f4JpTFexy1DM5F%2Fny3Yc0gFx7tqCTA%2BOvpQ9ljvCu91rK4N1o5rFTiYQVLb7iTAs1s\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "88f782964bb229bc-IAD"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"ZjMyYWQyZDdkMjBlYTQwOWY4NTY1MWU4MGMyMjQ4NGY5OGNlNDI3N2QwMGUxZTBmMjAyZGU1MjcyYjIyZmJiZQ\",\n    \"expires_in\": 172800,\n    \"token_type\": \"bearer\",\n    \"scope\": null,\n    \"refresh_token\": \"ODE3OWE0ZTk2NzJlYzBmOTNiNzE4YTZiZDhiMzViMzczMjJiY2E2NmU4MmE2NDM2NDc4Nzg5NjA4ZTVmM2I4Nw\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Creat contractorHumen дженефер лопес",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"   let XYZ= pm.response.json();\r",
+							"pm.collectionVariables.set(\"contractorID\", XYZ.data.id);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"contentType\": \"ContractorHuman\",\r\n    \"Category183CustomFieldKolichestvoKontaktov\": null,\r\n    \"Category183CustomFieldKommentarii\": null,\r\n    \"Category183CustomFieldDostavkaAdresDostavki\": null,\r\n    \"Category183CustomFieldDostavkaTelefonKlienta\": null,\r\n    \"Category183CustomFieldDostavkaFioPoluchatelya\": null,\r\n    \"activityType\": null,\r\n    \"advertisingWay\": null,\r\n    \"status\": null,\r\n    \"partners\": null,\r\n    \"competitors\": null,\r\n    \"birthday\": null,\r\n    \"responsibles\": [\r\n        {\r\n            \"id\": \"1000104\",\r\n            \"contentType\": \"Employee\"\r\n        }\r\n    ],\r\n    \"isPublic\": false,\r\n    \"gender\": \"male\",\r\n    \"description\": \"<p>описание</p>\",\r\n    \"type\": {\r\n        \"id\": \"1\",\r\n        \"contentType\": \"ContractorType\"\r\n    },\r\n    \"company\": null,\r\n    \"position\": \"водитель\",\r\n    \"lastName\": \"Лопес\",\r\n    \"firstName\": \"Дженефер\",\r\n    \"middleName\": \"\",\r\n    \"attaches\": [],\r\n    \"contactInfo\": [\r\n        {\r\n            \"contentType\": \"ContactInfo\",\r\n            \"type\": \"icq\",\r\n            \"value\": \"1235464\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://radio-shop.megaplan.by/api/v3/contractorHuman",
+					"protocol": "https",
+					"host": [
+						"radio-shop",
+						"megaplan",
+						"by"
+					],
+					"path": [
+						"api",
+						"v3",
+						"contractorHuman"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creat contractorHumen Деятельность",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1273389\",\r\n    \"contentType\": \"ContractorHuman\",\r\n    \"activityType\": {\r\n        \"id\": \"1000001\",\r\n        \"contentType\": \"ContractorActivityType\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://radio-shop.megaplan.by/api/v3/contractorHuman/{{contractorID}}",
+					"protocol": "https",
+					"host": [
+						"radio-shop",
+						"megaplan",
+						"by"
+					],
+					"path": [
+						"api",
+						"v3",
+						"contractorHuman",
+						"{{contractorID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creat contractorHumen День Рождения",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"1273389\",\r\n    \"contentType\": \"ContractorHuman\",\r\n    \"birthday\": {\r\n        \"contentType\": \"DateOnly\",\r\n        \"year\": 1990,\r\n        \"month\": 0,\r\n        \"day\": 1\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://radio-shop.megaplan.by/api/v3/contractorHuman/{{contractorID}}",
+					"protocol": "https",
+					"host": [
+						"radio-shop",
+						"megaplan",
+						"by"
+					],
+					"path": [
+						"api",
+						"v3",
+						"contractorHuman",
+						"{{contractorID}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "inherit"
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "token",
+			"value": "MDZiYjk4YmM4MzQ5NWE0MTk1MzQ1NjA4ZmI0NTc5MDAyZTEyMTE4NzkzMmVlZDc1ZGUwMWZkMmUxYjQ3MmI3ZQ",
+			"type": "string"
+		},
+		{
+			"key": "contractorID",
+			"value": "1273392",
+			"type": "string"
+		}
+	]
+}
